@@ -5,9 +5,9 @@
 # 'server' can be any Rack-supported server, e.g.
 #  Mongrel, Thin, WEBrick
 #
-Frank.server.handler = "mongrel"
+Frank.server.handler = "thin"
 Frank.server.hostname = "0.0.0.0"
-Frank.server.port = "3601"
+Frank.server.port = "3333"
 
 # ----------------------
 #  Static folder:
@@ -60,7 +60,7 @@ Frank.layouts_folder = "layouts"
 
 # ----------------------
 # Sass Options:
-# Frank.sass_options = { :load_paths => [ File.join(File.dirname(__FILE__), 'dynamic/css') ] }
+Frank.sass_options = { :load_paths => [ File.join(File.dirname(__FILE__), 'dynamic/css') ] }
 
 
 # ----------------------
@@ -68,3 +68,5 @@ Frank.layouts_folder = "layouts"
 #
 # Add any other project setup code, or requires here
 # ....
+
+

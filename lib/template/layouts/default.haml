@@ -1,9 +1,30 @@
-!!! Strict
+= refresh
+
+!!! 5
 %html
   %head
-    %title Frank's on the scene.
-    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'/css/frank.css'}
-    %script{:type=>'text/javascript', :src=>'/js/frank.js'}
+
+    // Page Title
+    %title creativeKoder
+    
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'http://fonts.googleapis.com/css?family=Artifika:regular&v1'}
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'http://fonts.googleapis.com/css?family=Forum:regular&v1'}
+
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'css/html5.css'}
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'css/fonts.css'}
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'css/master.css'}
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'css/fluidGrid.css'}
+    
+    // Stylesheets
+    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'css/master.css'}
+    
+    // Javascripts
+    %script{:type => 'text/javascript', :src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'}
+    %script{:type=>'text/javascript',   :src=>'js/master.js'}
+
+
   %body
-    #wrapper
+    %section#wrapper
+      %header#top-header
       = yield
+      %footer#footer
